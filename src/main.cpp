@@ -42,7 +42,7 @@ CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 static CBigNum bnProofOfStakeLimitTestNet(~uint256(0) >> 16);
 
 unsigned int nWorkTargetSpacing = 60; // 1 minutes per block
-unsigned int nStakeTargetSpacing = 1 * 60 * 60; // 60 seconds
+unsigned int nStakeTargetSpacing = 60; // 60 seconds
 unsigned int nStakeMinAge = 2 * 24 * 60 * 60; // 2 Days
 unsigned int nStakeMaxAge = -1; // unlimited
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
