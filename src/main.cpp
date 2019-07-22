@@ -1062,10 +1062,11 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
     }	
 	
 	else if(pindexBest->nHeight > 499999)
-	{
-	    nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
-		return nSubsidy + nFees; 
-	}	
+    {
+	nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
+		
+   		 return nSubsidy + nFees; 
+}	
 	
 	if (fDebug && GetBoolArg("-printcreation"))  
         printf("GetProofOfStakeReward(): create=%s nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);  
